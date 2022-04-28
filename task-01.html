@@ -6,12 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 1</title>
     <link rel="stylesheet" href="css/common.css" />
+    <style>
+      #parent,
+#child,
+#descendant {
+  margin: 16px;
+  padding: 16px;
+  border: 4px solid #212121;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#parent {
+  background-color: #673ab7;
+}
+
+#child {
+  background-color: #448aff;
+}
+
+#descendant {
+  background-color: #ff9800;
+}
+    </style>
   </head>
   <body>
-    
-         
-         
-   
+    <p><a href="index.html">Go back</a></p>
+    <!--Припинення спливання-->
+    <div id="parent">
+      Батько
+      <div id="child">
+        Дитина
+        <div id="descendant">Нащадок</div>
+      </div>
+    </div>     
+
 
     <script src="js/task-01.js" type="module"></script>
   </body>
