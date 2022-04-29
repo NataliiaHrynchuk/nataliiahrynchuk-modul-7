@@ -7,26 +7,79 @@
     <title>Task 8</title>
     <link rel="stylesheet" href="css/common.css" />
     <style>
-      .login-form {
-        max-width: 320px;
+      .tags {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 8px;
+        background-color: #fff;
+        list-style: none;
+        user-select: none;
+        outline: 1px solid tomato;
       }
 
-      .login-form label {
-        margin-bottom: 16px;
+      .tags__item {
+        padding: 10px;
+        outline: 1px solid green;
+        margin: 4px;
       }
 
-      .login-form input,
-      .login-form button {
-        width: 100%;
-        padding: 4px;
-        font: inherit;
+      .tags__btn {
+        border: 1px solid #212121;
+        border-radius: 4px;
+        display: inline-block;
+        padding: 4px 10px 4px;
+
+        font-size: 24px;
+        font-family: inherit;
+        color: #212121;
+        font-weight: 500;
+        text-align: center;
+        white-space: nowrap;
+        text-decoration: none;
+        outline: none;
+
+        background-color: #fff;
+        cursor: pointer;
       }
+
+      .tags__btn--active {
+        color: #fff;
+        background-color: blueviolet;
+      }
+      
     </style>
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
+
+    <!-- Створення кнопок, при кліканні на які, поточна клікнута буде забарвлюватись -->
+
+    <ul class="tags js-tags">
+      <li class="tags__item">
+        <button class="tags__btn" data-value="css">#css</button>
+      </li>
+      <li class="tags__item">
+        <button class="tags__btn" data-value="javascript">#javascript</button>
+      </li>
+      <li class="tags__item">
+        <button class="tags__btn" data-value="npm">#npm</button>
+      </li>
+      <li class="tags__item">
+        <button class="tags__btn" data-value="webpack">#webpack</button>
+      </li>
+      <li class="tags__item">
+        <button class="tags__btn" data-value="react">#react</button>
+      </li>
+      <li class="tags__item">
+        <button class="tags__btn" data-value="redux">#redux</button>
+      </li>
+      <li class="tags__item">
+        <button class="tags__btn" data-value="nodejs">#nodejs</button>
+      </li>
+    </ul>
 
     
 
