@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -32,9 +32,9 @@ button {
    margin-top: 60px;
  }
 
- .js-output {margin-bottom: 100px;}
+ .js-output {margin-bottom: 100px;} */
 
- .box {
+ /* .box {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -43,9 +43,9 @@ button {
    margin-bottom: 100px;
    background-color: blue;
    transition: background-color 200ms ease-in;
- }
+ } */
 
- .box--active {
+ /* .box--active {
    background-color: aquamarine;
  }
   .inner-box {
@@ -99,21 +99,4 @@ button {
     border: 1px solid green;
   }
 
-  /* <!-- task-03---> */
-.gallery {
-  padding-left: 20px;
-  padding-top: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.image {
-  width: 100%;
-}
-
-
-.li-item {
-  border: none;
-  flex-basis: calc((100% - 40px) / 3);
-  }
+  */
