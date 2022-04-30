@@ -6,17 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 10 (optional)</title>
     <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .palette {
+        display: grid;
+        max-width: 1200px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 12px;
+        padding: 0;
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .color-card {
+        padding: 5px;
+        border-radius: 4px;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        transition: transform 250ms cubic-bezier(0.4, 0,0.2, 1);
+      }
+      .color-card.is-active {
+        transform: perspective(400px) rotateX(10deg);
+      }
+      .color-swatch {
+        height: 128px;
+        cursor: pointer;
+      }
+      .color-meta {
+        padding: 10px;
+        font-weight: 700;
+      }
+      .color-meta p {
+        margin-top: 0;
+        margin-bottom: 0;
+        letter-spacing: 0.1em;
+      }
+    </style>
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
 
-    <div id="controls">
-      <input type="number" min="1" max="100" step="1" />
-      <button type="button" data-create>Create</button>
-      <button type="button" data-destroy>Destroy</button>
+    <div class="palette js-palette">
+      
     </div>
 
-    <div id="boxes"></div>
+    
 
     <script src="js/task-10.js" type="module"></script>
   </body>
