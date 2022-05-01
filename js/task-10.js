@@ -44,10 +44,11 @@ function createColorCardsMarkup (colors) {
 function onPalettecontainerClick(evt) {
 // console.log(evt.target);//щоб відслідкувати, де клікнули
 const isColorSwatchEl = evt.target.classList.contains('color-swatch');//Елемент з класом color-swatch 
+
 if(!isColorSwatchEl) {
   return;
 }
-const swatchEl = evt.target;//клікнутий елемент
+// const swatchEl = evt.target;//клікнутий елемент
 // console.log(swatchEl);//якщо клікнули не по елементу з класом color-swatch, то виходимо, а якщо навпаки, виводим поточний елемент в консоль
 // console.log(swatchEl.dataset.hex);//Виводить значення дата-атрибуту hex клікнутого елемента
 
@@ -55,13 +56,26 @@ const swatchEl = evt.target;//клікнутий елемент
 // const parentColorCard = swatchEl.parentNode;
 // console.log(parentColorCard);//Виводить батьківський елемент клікнутої картки
 
+const swatchEl = evt.target;
 const parentColorCard = swatchEl.closest('.color-card');//якщо багато рівнів вкладеності, а нам потрібно знайти якогось предка через скількись рівнів вкладеності, шукаємо його за класом 
-console.log(parentColorCard);
+// console.log(parentColorCard);//Виводим в консоль предка з класом color-card
+removeActiveCardClas();
+addActiveCardClass(parentColorCard);// Викликаємо ф-цію, яка додасть клас is-active на предка клікнутої картки з класом color-card
+// document.body.style.backgroundColor = swatchEl.dataset.hex;//має зафарбовувати лише body в поточний колір, але в мене чомусь зафарбовує все
 
-const currentActivCard = document.querySelector('.color-card.is-active');//Шукаємо елемент з класом color-card, в якого є ще клас is-active 
+setBodyBgColor(swatchEl.dataset.hex);//Викликаю ф-цію setBodyBgColor зі значення дата-атрибуту hex на клікнутому елементі
+}
+function setBodyBgColor(color) {
+  document.body.style.backgroundColor = color;
+ }// ф-ція, яка передає бекграунд колор на боді, але в мене надає на всіх
 
-if(currentActivCard) {
-  currentActivCard.classList.remove('is-active');
-}//якщо є карточка з класом color-card, в якого є ще клас is-active, то зняти клас is-active
-parentColorCard.classList.add('is-active');//а на предка поточної картки з класом color-card додати клас is-active
+function removeActiveCardClas () {
+  const currentActivCard = document.querySelector('.color-card.is-active');//Шукаємо елемент з класом color-card, в якого є ще клас is-active 
+  if(currentActivCard) {
+    currentActivCard.classList.remove('is-active');
+  }//якщо є карточка з класом color-card, в якого є ще клас is-active, то зняти клас is-active
+}
+
+function addActiveCardClass (card) {
+  card.classList.add('is-active');// на вказану картку додати клас is-active
 }
