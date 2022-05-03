@@ -17,23 +17,28 @@
 img {
   display: block;
   max-width: 100%;
+  transform: translateX(-50%);
+  opacity: 0; 
+  transition: all 500ms linear;
+  object-fit: cover;
 }
-.blur-up {
-  filter: blur(5px);
-  transition: filter 400ms;
-}
+ img.appear {
+   transform: translateX(0);
+   opacity: 1;
+ }
 
-.blur-up.lazyloaded {
-  filter: blur(0);
-}
+
 
     </style>
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
-
+<!--------------Ліниве завантаження зображень ----------->
+<!-- 1.Якщо верстка не адаптивна, то обов'язково вказати в img width і height
+2. Всім картинкам додати атрибут loading="lazy", але підтримується не всіма браузерами -->
     <img 
-    class="lazyload blur-up" 
+    class="lazyload blur-up"
+    loading="lazy" 
     src="https://via.placeholder.com/960" 
     data-src="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=960" 
     alt="Close-Up Photography of Sleeping Tabby Cat" width="960" />
@@ -41,6 +46,7 @@ img {
 
 <img 
 class="lazyload blur-up" 
+loading="lazy"
 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=960" 
 alt="Photo of Grey Tabby Kitten Lying Down" 
 width="960" />
@@ -49,6 +55,7 @@ width="960" />
 
 <img 
 class="lazyload blur-up" 
+loading="lazy"
 src="https://via.placeholder.com/960" 
 data-src="https://images.pexels.com/photos/1440403/pexels-photo-1440403.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=960" 
 alt="Orange Kitten" 
@@ -59,6 +66,7 @@ width="960" />
 
 <img 
 class="lazyload blur-up" 
+loading="lazy"
 src="https://via.placeholder.com/960" 
 data-src="https://images.pexels.com/photos/2817421/pexels-photo-2817421.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=960" 
 alt="Photo of Tabby Cat Sleeping On Chair" 
@@ -68,6 +76,7 @@ width="960" />
 
 <img 
 class="lazyload blur-up" 
+loading="lazy"
 src="https://via.placeholder.com/960" 
 data-src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=960" alt="Brown Cat With Green Eyes" 
 width="960" />
@@ -76,6 +85,7 @@ width="960" />
 
 <img 
 class="lazyload blur-up" 
+loading="lazy"
 src="https://via.placeholder.com/960" 
 data-src="https://images.pexels.com/photos/3635550/pexels-photo-3635550.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=960" 
 alt="Close-up Photo of Grey and Brown Cat" 
@@ -85,6 +95,7 @@ width="960" />
 
 <img 
 class="lazyload blur-up" 
+loading="lazy"
 src="https://via.placeholder.com/960" 
 data-src="https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=960" 
 alt="Close-Up Photo of Yellow and White Cat" 
