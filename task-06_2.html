@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6_2</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <style>
+      body {
+  margin: 16px;
+  line-height: 1.5;
+  color: #2a2a2a;
+  background-color: #f5f5f5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  transform: translateX(-50%);
+  opacity: 0; 
+  transition: all 500ms linear 500ms;
+  object-fit: cover;
+}
+
+ img.appear {
+   transform: translateX(0);
+   opacity: 1;
+ }
+
+
+
+    </style>
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
+<!--------------Приклад на визначення, чи підтримує бравзер ліниве завантаження
+  (fiture detection), і застосування відповідного коду, коли вибирається або 
+  нативна верстка, або підключається бібліотека ----------->
+<!-- 1.Вказати в img width і height
+2. Всім img додати атрибут loading="lazy"
+3. Всім img присвоїти class="lazyload"
+4. У всіх img має бути data-src, а не src-->
+    <img 
+    loading="lazy"
+    class="lazyload"
+    data-src="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=960" 
+    alt="Close-Up Photography of Sleeping Tabby Cat" 
+    width="640"
+    height="480" />
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad fugiat, error quisquam alias eaque officia cum quasi enim libero a molestiae repudiandae repellat deserunt debitis deleniti vel accusantium. Aut enim doloremque ullam quibusdam consequatur in repellendus beatae? Aspernatur sequi fugit vero provident ea perspiciatis eos officia non reiciendis adipisci ipsa, nemo, similique, molestias rerum totam debitis nulla a iure inventore! Eum, voluptatem, sit corrupti at molestiae rerum nulla ratione optio est alias perspiciatis quas. Aliquam libero placeat, distinctio unde deleniti minus commodi at maiores officiis doloremque quae voluptates quia aliquid doloribus, vero aspernatur, aperiam corrupti dicta eligendi rerum? In, voluptate.</p>
+
+<img 
+loading="lazy"
+class="lazyload" 
+data-src="https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=960" 
+alt="Photo of Grey Tabby Kitten Lying Down" 
+width="640"
+height="480"/>
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad fugiat, error quisquam alias eaque officia cum quasi enim libero a molestiae repudiandae repellat deserunt debitis deleniti vel accusantium. Aut enim doloremque ullam quibusdam consequatur in repellendus beatae? Aspernatur sequi fugit vero provident ea perspiciatis eos officia non reiciendis adipisci ipsa, nemo, similique, molestias rerum totam debitis nulla a iure inventore! Eum, voluptatem, sit corrupti at molestiae rerum nulla ratione optio est alias perspiciatis quas. Aliquam libero placeat, distinctio unde deleniti minus commodi at maiores officiis doloremque quae voluptates quia aliquid doloribus, vero aspernatur, aperiam corrupti dicta eligendi rerum? In, voluptate.</p>
+
+<img 
+loading="lazy"
+class="lazyload" 
+data-src="https://images.pexels.com/photos/1440403/pexels-photo-1440403.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=960" 
+alt="Orange Kitten" 
+width="640"
+height="480" />
+
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad fugiat, error quisquam alias eaque officia cum quasi enim libero a molestiae repudiandae repellat deserunt debitis deleniti vel accusantium. Aut enim doloremque ullam quibusdam consequatur in repellendus beatae? Aspernatur sequi fugit vero provident ea perspiciatis eos officia non reiciendis adipisci ipsa, nemo, similique, molestias rerum totam debitis nulla a iure inventore! Eum, voluptatem, sit corrupti at molestiae rerum nulla ratione optio est alias perspiciatis quas. Aliquam libero placeat, distinctio unde deleniti minus commodi at maiores officiis doloremque quae voluptates quia aliquid doloribus, vero aspernatur, aperiam corrupti dicta eligendi rerum? In, voluptate.</p>
+
+<img 
+loading="lazy"
+class="lazyload" 
+data-src="https://images.pexels.com/photos/2817421/pexels-photo-2817421.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=960" 
+alt="Photo of Tabby Cat Sleeping On Chair" 
+width="640"
+height="480" />
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad fugiat, error quisquam alias eaque officia cum quasi enim libero a molestiae repudiandae repellat deserunt debitis deleniti vel accusantium. Aut enim doloremque ullam quibusdam consequatur in repellendus beatae? Aspernatur sequi fugit vero provident ea perspiciatis eos officia non reiciendis adipisci ipsa, nemo, similique, molestias rerum totam debitis nulla a iure inventore! Eum, voluptatem, sit corrupti at molestiae rerum nulla ratione optio est alias perspiciatis quas. Aliquam libero placeat, distinctio unde deleniti minus commodi at maiores officiis doloremque quae voluptates quia aliquid doloribus, vero aspernatur, aperiam corrupti dicta eligendi rerum? In, voluptate.</p>
+
+<img 
+loading="lazy"
+class="lazyload" 
+data-src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=960" alt="Brown Cat With Green Eyes" 
+width="640"
+height="480" />
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad fugiat, error quisquam alias eaque officia cum quasi enim libero a molestiae repudiandae repellat deserunt debitis deleniti vel accusantium. Aut enim doloremque ullam quibusdam consequatur in repellendus beatae? Aspernatur sequi fugit vero provident ea perspiciatis eos officia non reiciendis adipisci ipsa, nemo, similique, molestias rerum totam debitis nulla a iure inventore! Eum, voluptatem, sit corrupti at molestiae rerum nulla ratione optio est alias perspiciatis quas. Aliquam libero placeat, distinctio unde deleniti minus commodi at maiores officiis doloremque quae voluptates quia aliquid doloribus, vero aspernatur, aperiam corrupti dicta eligendi rerum? In, voluptate.</p>
+
+<img 
+loading="lazy"
+class="lazyload" 
+data-src="https://images.pexels.com/photos/3635550/pexels-photo-3635550.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=960" 
+alt="Close-up Photo of Grey and Brown Cat" 
+width="640"
+height="480" />
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad fugiat, error quisquam alias eaque officia cum quasi enim libero a molestiae repudiandae repellat deserunt debitis deleniti vel accusantium. Aut enim doloremque ullam quibusdam consequatur in repellendus beatae? Aspernatur sequi fugit vero provident ea perspiciatis eos officia non reiciendis adipisci ipsa, nemo, similique, molestias rerum totam debitis nulla a iure inventore! Eum, voluptatem, sit corrupti at molestiae rerum nulla ratione optio est alias perspiciatis quas. Aliquam libero placeat, distinctio unde deleniti minus commodi at maiores officiis doloremque quae voluptates quia aliquid doloribus, vero aspernatur, aperiam corrupti dicta eligendi rerum? In, voluptate.</p>
+
+<img 
+loading="lazy"
+class="lazyload" 
+data-src="https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=960" 
+alt="Close-Up Photo of Yellow and White Cat" 
+width="640"
+height="480"  />
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad fugiat, error quisquam alias eaque officia cum quasi enim libero a molestiae repudiandae repellat deserunt debitis deleniti vel accusantium. Aut enim doloremque ullam quibusdam consequatur in repellendus beatae? Aspernatur sequi fugit vero provident ea perspiciatis eos officia non reiciendis adipisci ipsa, nemo, similique, molestias rerum totam debitis nulla a iure inventore! Eum, voluptatem, sit corrupti at molestiae rerum nulla ratione optio est alias perspiciatis quas. Aliquam libero placeat, distinctio unde deleniti minus commodi at maiores officiis doloremque quae voluptates quia aliquid doloribus, vero aspernatur, aperiam corrupti dicta eligendi rerum? In, voluptate.</p>
+
+
+
+
+  <!--============My script file==============-->
+
+    <script src="js/task-06_2.js" type="module"></script>
+  </body>
+</html>
