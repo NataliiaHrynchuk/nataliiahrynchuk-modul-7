@@ -14,7 +14,7 @@ const eventCounter = {
 // Trailing debounce
 document.addEventListener(
   "scroll",
-  _.debounce(() => {
+  _?.debounce(() => {
     eventCounter.trailing += 1;
     trailingOutput.textContent = eventCounter.trailing;
   }, 300)
