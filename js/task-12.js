@@ -53,4 +53,4 @@ function onFilterChange(evt) {
 
 function populateList (markup) {
   refs.list.innerHTML = markup;
-}//ф-ція, яка заміняє в розмітці список відфільрованим списком
+}//ф-ція, яка заміняє в розмітці список відфільтрованим списком
